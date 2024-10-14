@@ -1,0 +1,24 @@
+footer {
+    background-color: #9c93c2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+footer p, footer small {
+    margin: 5px 0;
+}
+
+footer address {
+    font-style: normal;
+    color: #f1e6ff;
+}
+
+footer small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #e0d4ff;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="header" style="text-align: center;">All Discounts</h1>
+  
+    
+      <ng-container *ngIf="getFilteredProductsDiscount().length > 0;">
+        <div class="filters">
+            <a class="button" (click)="filter=''">All</a>
+            <a class="button" (click)="filter='Pies'">Pies</a>
+            <a class="button" (click)="filter='Cheesecakes'">Cheesecakes</a>
+          </div>
+          <ul class="products">
+        <li class="product-item" *ngFor="let product of getFilteredProductsDiscount()">
+          <app-product-details [product]="product" (buy)="addToCart(product)"></app-product-details>
+        </li>
+    </ul>
+      </ng-container>
+      
+      <div class="no-discount" *ngIf="getFilteredProductsDiscount().length === 0">
+        No discounts available for the moment!
+      </div>
+    
+  </div>
+  

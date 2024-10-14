@@ -72,7 +72,8 @@
               "buildTarget": "joes-robot-shop-enit:build:production"
             },
             "development": {
-              "buildTarget": "joes-robot-shop-enit:build:development"
+              "buildTarget": "joes-robot-shop-enit:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -102,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
